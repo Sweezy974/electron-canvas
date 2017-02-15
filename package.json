@@ -1,0 +1,12 @@
+{
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.4.15"
+  },
+  "devDependencies": {
+    "karma": "^1.4.1"
+  }
+}

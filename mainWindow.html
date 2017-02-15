@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <button type="button" onclick="show()">Show second window</button>
+
+  <canvas id="canvas" width="490" height="220" style="border:1px solid black;"></canvas>
+  <p class="demoToolList">Clear the canvas: <button id="clearCanvasSimple" type="button" onclick="clearCanvas()">Clear</button></p>
+  <ul class="demoToolList">
+    <li>
+      <span class="highlight">Choose a color: </span>
+      <button id="choosePurpleSimpleColors" type="button" onclick="changeColorPurple()">Purple</button>
+      <button id="chooseGreenSimpleColors" type="button" onclick="changeColorGreen()">Green</button>
+      <button id="chooseYellowSimpleColors" type="button" onclick="changeColorYellow()">Yellow</button>
+      <button id="chooseBrownSimpleColors" type="button" onclick="changeColorBrown()">Brown</button></li>
+  </ul>
+</body>
+
+<script>
+    const {ipcRenderer} = require('electron')
+    function show() {
+      ipcRenderer.send('show-second');
+    }
+
+    function cheat() {
+
+    }
+</script>
+  <script src="canvas.js"></script>
+
+</html>
