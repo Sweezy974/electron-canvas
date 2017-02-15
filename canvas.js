@@ -4,8 +4,9 @@ var colorPurple = "#cb3594";
 var colorGreen = "#659b41";
 var colorYellow = "#ffcf33";
 var colorBrown = "#986928";
-var curColor = "#fffff";
+// var curColor = "#fffff";
 var clickColor = new Array();
+var colorWhite = "#ffffff";
 
 context = document.getElementById('canvas').getContext("2d");
 
@@ -95,4 +96,8 @@ curColor = colorYellow;
 
 function changeColorBrown(){
 curColor = colorBrown;
+}
+
+function eraser() {
+  curColor = colorWhite;
 }
